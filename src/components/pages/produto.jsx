@@ -1,12 +1,21 @@
-function home(){
+function produto(){
     return(
 
 
-            <div></div>
+            <div className={styles.ContainerProdutos}>
+                    <div className={styles.BlocoProdutos}>
+
+
+
+                    </div>
+
+
+
+            </div>
 
 
 
     )
 }
 
-export default home;
+export default produto;
