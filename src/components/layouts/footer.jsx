@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function home(){
     return(
 
@@ -10,3 +11,39 @@ function home(){
 }
 
 export default home;
+=======
+import { Link } from 'react-router-dom'
+import styles from '../../styles/styles-layouts/footer.module.css'
+import ImgFooter from '../../assets/imgFooter/LogoEmpresa.png'
+import ImgRodrigo from '../../assets/imgFooter/Rodrigo.jpg'
+import ImgChrystian from '../../assets/imgFooter/Chrystian.png'
+import ImgLinkedin from '../../assets/imgFooter/linkedin.svg'
+import ImgGithub from '../../assets/imgFooter/git-hub.svg'
+
+function Footer(){
+    const empresaPath = "/empresa"
+    
+    return(
+        <footer className={styles.Footer}>
+            <div className={styles.BoxFooter}>
+                <Link to={empresaPath}>
+                    <img src={ImgFooter} alt="ByteStore" className={styles.ImgEmpresa}/>
+                </Link>
+                <p className={styles.DireitosFooter}>
+                    © 2025 BytStore Inc. All rights reservaduss.
+                </p>
+            </div>
+            <div className={styles.BoxFooter}>
+                <p className={styles.DireitosFooter}>Criadores</p>
+            </div>
+            <div className={styles.BoxFooter}>
+                <img src={ImgRodrigo} alt="Rodrigo" className={styles.ImgPessoa} />
+                <img src={ImgLinkedin} alt="Linkedin" className={styles.ImgIcone} />
+                <img src={ImgGithub} alt="GitHub" className={styles.ImgIcone} />
+                <img src={ImgChrystian} alt="Chrystian" className={styles.ImgPessoa}/>
+            </div>
+        </footer>
+    )
+}
+export default Footer
+>>>>>>> 5fe1e92fe0fba72ccfb321210d09e2a67093a2de
