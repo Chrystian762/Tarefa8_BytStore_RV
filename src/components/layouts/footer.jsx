@@ -24,7 +24,9 @@ function Footer(){
                 <p className={styles.DireitosFooter}>Criadores</p>
                 <div className={styles.BoxFooterCriadores}>
                     <div className={styles.CriadoresFooter}>
-                    <img src={ImgRodrigo} alt="Rodrigo" className={styles.ImgPessoa} />
+                    <Link to={empresaPath}>
+                        <img src={ImgRodrigo} alt="Rodrigo" className={styles.ImgPessoa} />
+                    </Link>
                         <div className={styles.RedesSociais}>
                             <a href="https://www.linkedin.com/in/rodrigo-santos-a950b2343" target='_blank'>
                                 <img src={ImgLinkedin} alt="Linkedin" className={styles.ImgIcone} />
@@ -35,7 +37,9 @@ function Footer(){
                         </div>
                     </div>
                     <div className={styles.CriadoresFooter}>
-                    <img src={ImgChrystian} alt="Chrystian" className={styles.ImgPessoa}/>
+                    <Link to={empresaPath}>
+                        <img src={ImgChrystian} alt="Chrystian" className={styles.ImgPessoa}/>
+                    </Link>
                         <div className={styles.RedesSociais}>
                             <a href="https://www.linkedin.com/in/chrystian-gabriel-93799a29b" target='_blank'>
                                 <img src={ImgLinkedin} alt="Linkedin" className={styles.ImgIcone} />

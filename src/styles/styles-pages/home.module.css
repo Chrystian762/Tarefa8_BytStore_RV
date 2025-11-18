@@ -12,12 +12,11 @@
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 20px;
 }
 .SaudacaoHome{
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
